@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     css: ["~/assets/css/main.css"],
     postcss: {
@@ -7,8 +6,13 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
+    modules: ["@storyblok/nuxt"],
+    storyblok: {
+        accessToken: process.env.STORYBLOK_API_TOKEN,
+    },
     typescript: {
         typeCheck: true,
         strict: true,
     },
+    ssr: process.env.NUXT_ENV === "development" ? false : true,
 });

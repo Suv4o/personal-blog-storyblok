@@ -607,7 +607,7 @@
   resolved "https://registry.yarnpkg.com/@nuxt/devalue/-/devalue-2.0.0.tgz#c7bd7e9a516514e612d5d2e511ffc399e0eac322"
   integrity sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==
 
-"@nuxt/kit@3.3.1", "@nuxt/kit@^3.2.0":
+"@nuxt/kit@3.3.1", "@nuxt/kit@^3.0.0", "@nuxt/kit@^3.2.0":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.3.1.tgz#93e02a41d9adc7369d704deb88ae143c29554a4e"
   integrity sha512-zb7/2FUIB1g7nl6K6qozUzfG5uu4yrs9TQjZvpASnPBZ/x1EuJX5k3AA71hMMIVBEX9Adxvh9AuhDEHE5W26Zg==
@@ -808,6 +808,28 @@
     "@types/estree" "^1.0.0"
     estree-walker "^2.0.2"
     picomatch "^2.3.1"
+
+"@storyblok/js@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@storyblok/js/-/js-2.1.1.tgz#0b5bd931499a4ae8a8653438a7ed78a2b8a166a2"
+  integrity sha512-jYzOmcGWWOTC4EeeYwXLm9Q84KFzyMFXx7K3ctev1twDJ82mc8+nP8hjXglsccp8Nmbhs6C5ddnU3RAHP0UeYg==
+  dependencies:
+    storyblok-js-client "^5.4.1"
+
+"@storyblok/nuxt@^5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@storyblok/nuxt/-/nuxt-5.3.0.tgz#1360e438504b7df7b9898dbfc1d803d6435c122b"
+  integrity sha512-355QofnjmEiurl2py0wPXUJKK77Sl73NAr8uHjQ79+Q8XE8Ytq5b658OikJRXsSWiz+hjZJW5+AWkwOYwusi+g==
+  dependencies:
+    "@nuxt/kit" "^3.0.0"
+    "@storyblok/vue" "^7.0.0"
+
+"@storyblok/vue@^7.0.0":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@storyblok/vue/-/vue-7.1.1.tgz#5da7e683885a729e311d09ab0936df3c2a403eb2"
+  integrity sha512-MpJbRwf9ifjxvCTB/sf/5MK8YWQVD6jU7wHUYO9GYb77GcglAANywxww9O/zyEOzZGESsJ0gm/DcWoe1wY8Ckg==
+  dependencies:
+    "@storyblok/js" "^2.1.1"
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
@@ -3951,6 +3973,11 @@ stdin-discarder@^0.1.0:
   integrity sha512-xhV7w8S+bUwlPTb4bAOUQhv8/cSS5offJuX8GQGq32ONF0ZtDWKfkdomM3HMRA+LhX6um/FZ0COqlwsjD53LeQ==
   dependencies:
     bl "^5.0.0"
+
+storyblok-js-client@^5.4.1:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-5.8.0.tgz#6e068100558fc8c74b62d953357769ae43f862d8"
+  integrity sha512-0RbKaFZ4UGRt6c/01SZl4KBxDo6L7X07lKmDV3C44vN2WKgtcKt00Qmjt7JANyAq6ymf1MCUe+mGLNNJ3t/Gbw==
 
 "string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
